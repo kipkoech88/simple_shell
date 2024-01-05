@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unstd.h>
+#include <unistd.h>
 #include "main.h"
+
 
 /**
  * main - initialize the shell
  *
  * Return: Always 0, EXIT_SUCCESS
  */
+
+void shell_loop(void);
 
 int main(int argc, char *argv[])
 {

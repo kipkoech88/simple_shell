@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 /**
  * shell_split_line - gets tokens from string
  *
@@ -16,7 +16,7 @@
 char **shell_split_line(char *line)
 {
 	int bufsize = SHELL_TOK_BUFSIZE, position = 0;
-	char **tokens = malloc(busize * sizeof(char));
+	char **tokens = malloc(bufsize * sizeof(char));
 	char *token;
 
 	if (!tokens)

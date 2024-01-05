@@ -1,6 +1,9 @@
 #include <unistd.h>
 #include <stdio.h>
 #include "main.h"
+#include <sys/wait.h>
+#include <sys/types.h>
+#include <stdlib.h>
 
 /**
  * shell_launch - launches the shell instance and execute commands

@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 /**
  * function declaration for builtin shell commands
@@ -20,7 +21,7 @@ char *builtin_str[] = {
 	"exit"
 };
 
-int (builtin_func[]) (char **) = {
+int (*builtin_fun[]) (char **) = {
 	&shell_cd,
 	&shell_help,
 	&shell_exit
