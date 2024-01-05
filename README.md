@@ -1,1 +1,1 @@
-# Linux simple shell using C language
+# Simple C shell projects
