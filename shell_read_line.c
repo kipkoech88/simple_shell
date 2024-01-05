@@ -41,7 +41,7 @@ char *shell_read_line(void)
 		if (position > buffsize)
 		{
 			buffsize += SHELL_BUFFSIZE;
-			buffer = realoc(buffer, buffsize);
+			buffer = realloc(buffer, buffsize);
 
 			if (!buffer)
 			{
